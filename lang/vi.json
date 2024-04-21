@@ -1,0 +1,59 @@
+{
+    "title": "WP Downloader",
+    "url": "https://localhost",
+    "domain": "localhost",
+    "keywords": "Downloader, WP, Story Downloader",
+    "image": "static/icons/android-chrome-512x512.png",
+    "description": "Tải xuống truyện để đọc trên máy đọc sách điện tử, điện thoại thông minh hoặc máy tính và nhiều hơn nữa, miễn phí!",
+    "titlebar": {
+        "home": "Trang chủ",
+        "help": "Trợ giúp",
+        "privacy": "Chứng nhận & Quyền riêng tư"
+    },
+    "home": {
+        "text": "Tải xuống truyện cho<br/> máy đọc sách điện tử, điện thoại thông minh, máy tính và nhiều hơn nữa!",
+        "placeholder": "Nhập URL để tải về sách, phần hoặc ID",
+        "submit": "Tiếp tục"
+    },
+    "help": [
+        {
+            "title": "Làm thế nào để tải xuống một câu chuyện từ WP?",
+            "text": "Bạn có thể mở câu chuyện mà bạn muốn tải xuống và đơn giản là thay đổi miền thành miền của bạn hoặc <b>localhost:3000</b>. Hoặc bạn có thể sao chép URL của cuốn sách và dán nó vào trường nhập trên trang của chúng tôi."
+        },
+        {
+            "title": "Tôi nên chọn định dạng nào cho việc tải xuống?",
+            "text": "Chúng tôi cung cấp hai định dạng khác nhau. Đầu tiên là định dạng <b>EPUB</b> và thứ hai là <b>HTML</b>.<br/>EPUB dành cho máy đọc sách điện tử như Kindle. Bạn có thể tải xuống và tải lên máy đọc sách điện tử của bạn bằng phần mềm gọi là Calibre. EPUB cũng hoạt động rất tốt với Apple Books. Vì vậy, nếu bạn có một chiếc iPhone, bạn nên tải xuống EPUB và bạn có thể đọc nó với Apple Books.<br/>Nếu bạn đang sử dụng một nền tảng khác như PC hoặc điện thoại thông minh chạy hệ điều hành Android, bạn nên tải xuống HTML. Chúng tôi cung cấp một tệp .html mà bạn có thể mở bằng bất kỳ trình duyệt nào. Điều này chứa một trình đọc hoàn chỉnh với câu chuyện có sẵn ngoại tuyến. Trình đọc cũng cung cấp cho bạn tùy chọn thay đổi font chữ, kích thước font chữ và bảng màu."
+        },
+        {
+            "title": "Điều khoản",
+            "text": "Dịch vụ này chỉ dành cho việc sử dụng cá nhân, đừng bán sách điện tử đã tải về của <b>người khác</b>!<br/>Chúng tôi không tán thành hoặc bảo đảm việc làm đó!"
+        },
+        {
+            "title": "Có câu hỏi hoặc vấn đề nào không?",
+            "text": "Tạo một vấn đề trên kho lưu trữ Github<br>Cảm ơn Feuerhamster và BluemediaGER vì mã nguồn</br>"
+        }
+    ],
+    "book": {
+        "download": {
+            "epub": "Tải xuống cho máy đọc sách điện tử (epub)",
+            "html": "Tải xuống PC / Điện thoại thông minh (html)",
+            "pdf": "Tải xuống dưới dạng PDF (pdf)"
+        },
+        "author": "Tác giả",
+        "pubDate": "Đã xuất bản",
+        "lang": "Ngôn ngữ",
+        "loading": {
+            "text": "Vui lòng chờ một vài giây trong khi chúng tôi chuẩn bị tải xuống của bạn..."
+        }
+    },
+    "parts": "Các phần",
+    "overview": "Tổng quan",
+    "next": "Phần tiếp theo",
+    "startReading": "Bắt đầu đọc",
+    "errors": {
+        "bookNotFound": "Xin lỗi, chúng tôi không thể tìm thấy cuốn sách!",
+        "invalidSearch": "Chúng tôi không thể phân tích giá trị bạn nhập.<br/> Vui lòng cung cấp một liên kết đến một câu chuyện hoặc một ID.",
+        "tokenError": "Captcha-Token của bạn không hợp lệ.",
+        "serverError": "Không thể lấy / chuyển đổi cuốn sách do lỗi nội bộ."
+    }
+}
