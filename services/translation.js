@@ -1,44 +1,41 @@
 const fs = require("fs");
 
-class Translation{
+class Translation {
+  static langData = {};
+  static langs = [];
 
-	static langData = {}
-	static langs = [];
+  static loadLanguages() {
+    let langs = fs.readdirSync("./lang");
 
-	static loadLanguages(){
+    for (let lang of langs) {
+      let langName = lang.split(".")[0];
 
-		let langs = fs.readdirSync("./lang");
+      Translation.langData[langName] = JSON.parse(
+        fs.readFileSync("./lang/" + lang).toString()
+      );
 
-		for(let lang of langs){
+      Translation.langs.push(langName);
+    }
+  }
 
-			let langName = lang.split(".")[0];
+  static getLangData(lang) {
+    return Translation.langData[lang];
+  }
 
-			Translation.langData[langName] = JSON.parse(fs.readFileSync("./lang/" + lang).toString());
+  static getTranslation(availableLangs) {
+    let langName = Array.isArray(availableLangs)
+      ? availableLangs[0]
+      : availableLangs;
+    let lang;
 
-			Translation.langs.push(langName);
+    if (availableLangs) {
+      lang = Translation.getLangData(langName);
+    } else {
+      lang = Translation.getLangData("vi");
+    }
 
-		}
-
-	}
-
-	static getLangData(lang){
-		return Translation.langData[lang];
-	}
-
-	static getTranslation(availableLangs){
-
-		let langName = Array.isArray(availableLangs) ? availableLangs[0] : availableLangs;
-		let lang;
-
-		if(availableLangs){
-			lang = Translation.getLangData(langName);
-		}else{
-			lang = Translation.getLangData("de");
-		}
-
-		return { lang, langName };
-	}
-
+    return { lang, langName };
+  }
 }
 
 module.exports = Translation;
